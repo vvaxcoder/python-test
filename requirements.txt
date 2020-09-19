@@ -1,0 +1,13 @@
+autopep8==1.5.4
+backports.functools-lru-cache==1.6.1
+beautifulsoup4==4.9.1
+configparser==4.0.2
+mccabe==0.6.1
+pycodestyle==2.6.0
+pydocstyle==3.0.0
+pyflakes==2.2.0
+pylama==7.7.1
+six==1.15.0
+snowballstemmer==2.0.0
+soupsieve==1.9.6
+toml==0.10.1
