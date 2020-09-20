@@ -2,5 +2,9 @@
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
     "python.pythonPath": "/usr/bin/python3",
-    "python.linting.pylamaEnabled": false
+    "python.linting.pylamaEnabled": false,
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#2c5dff",
+        "titleBar.inactiveBackground": "#2c5dff"
+      }
 }
