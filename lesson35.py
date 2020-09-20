@@ -1,4 +1,4 @@
-#Exceptions
+# Exceptions
 
 # print('Berofe try-except')
 

@@ -1,4 +1,4 @@
-#Classes and OOP
+# Classes and OOP
 
 class A:
     property1 = 'Property1'
