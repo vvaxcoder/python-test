@@ -3,10 +3,17 @@ from tkinter import *
 root = Tk()
 root.geometry('200x200+800+300')
 
-def change_color(text_color, hex_color):
-    label['text'] = text_color
-    e.delete(0, END)
-    e.insert(0, hex_color)
+class MyButtons:
+    def __init__(self, master, text_color, hex_color):
+        self.text_color = text_color
+        self.hex_color = hex_color
+        self.button = Button(root, bg=k, command=self.change_color)
+        self.button.pack(fill=X)
+
+    def change_color(self):
+        label['text'] = self.text_color
+        e.delete(0, END)
+        e.insert(0, self.hex_color)
 
 label = Label(root)
 label.pack()
@@ -25,6 +32,6 @@ colors = {
 }
 
 for k,v in colors.items():
-    Button(root, bg=k, command=lambda text=v, hex=k: change_color(text, hex)).pack(fill=X)
+    MyButtons(root, v, k)
 
 root.mainloop()
