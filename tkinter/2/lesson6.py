@@ -14,8 +14,17 @@ label.pack()
 e = Entry(root, width=30, justify="center")
 e.pack()
 
-btn_red = Button(root, bg="red", command=lambda: change_color('Red', '#ff0000')).pack(fill=X)
-btn_orange = Button(root, bg="orange", command=lambda: change_color('Orange', '#ff7d00')).pack(fill=X)
-btn_yellow = Button(root, bg="yellow", command=lambda: change_color('Yellow', '#ffff00')).pack(fill=X)
+colors = {
+    '#ff0000': 'Red',
+    '#ff7d00': 'Orange',
+    '#ffff00': 'Yellow',
+    '#00ff00': 'Green',
+    '#007dff': 'Blue',
+    '#0000ff': 'Blue',
+    '#7d00ff': 'Violet',
+}
+
+for k,v in colors.items():
+    Button(root, bg=k, command=lambda text=v, hex=k: change_color(text, hex)).pack(fill=X)
 
 root.mainloop()
