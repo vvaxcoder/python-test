@@ -24,7 +24,7 @@ btn_add = Button(root, text="Add", command=add_str).pack()
 btn_del = Button(root, text="Delete", command=del_str).pack()
 btn_get = Button(root, text="Get", command=get_str).pack()
 
-label1 = Label(root, bg="blue")
+label1 = Label(root, bg="blue", fg="white")
 label1.pack(fill=X)
 
 root.mainloop()
